@@ -5,56 +5,65 @@ import {
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
+
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { Link } from "react-router-dom"
 
 // Menu items.
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/home",
     icon: Home,
   },
   {
-    title: "Inbox",
-    url: "#",
+    title: "About",
+    url: "/about",
     icon: Inbox,
   },
   {
-    title: "Calendar",
-    url: "#",
+    title: "Projects",
+    url: "/projects",
     icon: Calendar,
   },
   {
-    title: "Search",
-    url: "#",
+    title: "Skills",
+    url: "/skills",
     icon: Search,
   },
   {
-    title: "Settings",
-    url: "#",
+    title: "Contact",
+    url: "/contact",
     icon: Settings,
   },
 ]
 
 export function AppSidebar() {
   return (
-    <Sidebar>
-      <SidebarContent>
+    <Sidebar className=" p-0 border mr-1 " variant="inset">
+      <SidebarContent >
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
-          <SidebarGroupContent>
+         
+          <SidebarGroupContent className="flex flex-col items-center p-6">
+              <img
+          src="./profile.jpg"
+          alt="profile"
+          className="w-48 rounded-lg object-cover mb-4"
+        />
+          <div className="bg-green-600 text-sm px-3 py-1 rounded-full mb-6">
+          <span className="text-white">● Available for Work</span>
+        </div>
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    <Link to={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
