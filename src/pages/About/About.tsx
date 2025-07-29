@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="  px-6 md:px-20 py-16 space-y-20">
+    <div className=" py-16 space-y-20">
       {/* Top Section */}
       <section className="flex flex-col gap-12">
         <h1 className="text-4xl font-bold mb-6">Get to Know Me</h1>
@@ -38,7 +38,7 @@ function About() {
       <div>
         <h2 className="text-2xl font-bold mb-10">Stack</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {stack.map((project, index) => {
+          {stack.slice(0, 3).map((project, index) => {
             return (
               <div
                 key={index}
