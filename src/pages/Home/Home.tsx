@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="  ">
+    <div >
       <section className="w-full items-center">
         <div className="w-full flex flex-col gap-6 px-6 py-12">
           <h1 className="text-5xl font-bold mb-6">

@@ -1,15 +1,39 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { projectData } from "@/data/projectData";
 
 function Projects() {
-  return (  
-    <div>
-      <h1 className="text-5xl font-bold mb-6">My Projects</h1>
-      <p className="text-muted-foreground text-lg my-8 max-w-2xl">
-        Here are some of the projects I've worked on:
-      </p>
+  return (
+    <div className=" py-16 space-y-20">
+      <h1 className="text-5xl font-bold mb-6">My Remarkable Projects</h1>
+      <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 mt-15">
+        {projectData.map((project, index) => {
+          return (
+            <Card key={index}>
+              <CardContent>
+                <div
+                  className="w-full h-[400px] rounded-lg mb-4 relative overflow-hidden group"
+                  aria-label={project.title}
+                >
+                  <span
+                    className="absolute inset-0 bg-center bg-cover transition-transform duration-300 will-change-transform"
+                    style={{ backgroundImage: `url(${project.image})` }}
+                  />
+                  <style>{`
+                    .group:hover span {
+                      transform: scale(1.05);
+                    }
+                  `}</style>
+                </div>
+                <h2 className="text-xl font-bold">{project.title}</h2>
+                <p className="text-muted-foreground text-sm">{project.description}</p>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </div>
       {/* Project list goes here */}
     </div>
-  )
+  );
 }
 
-export default Projects
-    
+export default Projects;

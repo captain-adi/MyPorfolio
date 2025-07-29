@@ -49,7 +49,7 @@ export function AppSidebar() {
          
           <SidebarGroupContent className="flex flex-col items-center p-6">
               <img
-          src="./profile.jpg"
+          src="./profile.png  "
           alt="profile"
           className="w-48 rounded-lg object-cover mb-4"
         />
