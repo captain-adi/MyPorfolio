@@ -9,7 +9,7 @@ function App() {
     <>
       <SidebarProvider>
         <AppSidebar />
-        <main className="flex-1">
+        <main className="flex-1 px-15">
           <SidebarTrigger />
           <Outlet />
         <Footer/>

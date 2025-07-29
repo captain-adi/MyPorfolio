@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className=" px-15  ">
+    <div className="  ">
       <section className="w-full items-center">
         <div className="w-full flex flex-col gap-6 px-6 py-12">
           <h1 className="text-5xl font-bold mb-6">
@@ -82,7 +82,7 @@ function Home() {
       <div>
         <h2 className="text-2xl font-bold mb-10">Stack</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {stack.map((project, index) => {
+          {stack.slice(0,3).map((project, index) => {
             return (
               <div
                 key={index}
@@ -116,8 +116,7 @@ function Home() {
           </Button>
         </Link>
       </div>
-<Connect/>
-     
+      <Connect />
     </div>
   );
 }

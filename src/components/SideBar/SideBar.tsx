@@ -16,7 +16,7 @@ import { Link } from "react-router-dom"
 const items = [
   {
     title: "Home",
-    url: "/home",
+    url: "/",
     icon: Home,
   },
   {
@@ -30,8 +30,8 @@ const items = [
     icon: Calendar,
   },
   {
-    title: "Skills",
-    url: "/skills",
+    title: "Stacks",
+    url: "/stack",
     icon: Search,
   },
   {
@@ -43,7 +43,7 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar className=" p-0 border mr-1 " variant="inset">
+    <Sidebar className="  p-0 border mr-1 " variant="inset">
       <SidebarContent >
         <SidebarGroup>
          
