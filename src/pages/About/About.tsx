@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className=" py-16 space-y-20">
+    <div className=" py-16 ">
       {/* Top Section */}
       <section className="flex flex-col gap-12">
-        <h1 className="text-4xl font-bold mb-6">Get to Know Me</h1>
+        <h1 className="text-5xl font-bold mb-6">Get to Know Me</h1>
         <p className="text-muted-foreground  leading-relaxed max-w-5xl">
           I’m Aditya, a dedicated front-end developer with a strong focus on building responsive and user-friendly web interfaces using React.js. I enjoy crafting clean, efficient code and continuously improving my skills to stay aligned with modern web development practices. I'm also exploring backend technologies to expand my full-stack capabilities and actively learning data structures and algorithms to strengthen my problem-solving abilities. With a strong passion for technology and continuous learning, I’m committed to creating impactful digital experiences.
         </p>
@@ -35,7 +35,7 @@ function About() {
       </section>
 
       {/* Stack Section */}
-      <div>
+      <div className="mt-10 md:mt-16">
         <h2 className="text-2xl font-bold mb-10">Stack</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {stack.slice(0, 3).map((project, index) => {
@@ -60,7 +60,7 @@ function About() {
       </div>
 
       {/* Button Section */}
-      <div className="flex justify-end">
+      <div className="flex justify-end my-16">
         <Link to="/projects">
           <Button
             className="flex items-center gap-2 px-6 py-4 hover:text-green-400 cursor-pointer group border border-gray-600"

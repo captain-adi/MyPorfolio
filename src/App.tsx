@@ -9,8 +9,8 @@ function App() {
     <>
       <SidebarProvider>
         <AppSidebar />
-        <main className="flex-1 px-15">
-          <SidebarTrigger />
+        <main className="flex-1 px-15 xl:ml-18 py-15"> 
+          <SidebarTrigger  className="absolute top-4 right-4 md:hidden " />
           <Outlet />
         <Footer/>
         </main>

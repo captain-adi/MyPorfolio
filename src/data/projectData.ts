@@ -10,8 +10,8 @@ export const projectData = [
         image : "./project2.png",
     },
     {
-        title : "Project Three",
-        description : "This is a brief description of Project Three. It showcases the main features and technologies used.",
+        title : "Klimate",
+        description : "This is a advance weather application which show real time data based on user location.",
         image : "./project3.png",
     }
 ]

@@ -3,9 +3,9 @@ import { projectData } from "@/data/projectData";
 
 function Projects() {
   return (
-    <div className=" py-16 space-y-20">
-      <h1 className="text-5xl font-bold mb-6">My Remarkable Projects</h1>
-      <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 mt-15">
+    <div className="py-16">
+      <h1 className="text-5xl font-bold mb-20">My Remarkable Projects</h1>
+      <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 ">
         {projectData.map((project, index) => {
           return (
             <Card key={index}>
@@ -25,7 +25,7 @@ function Projects() {
                   `}</style>
                 </div>
                 <h2 className="text-xl font-bold">{project.title}</h2>
-                <p className="text-muted-foreground text-sm">{project.description}</p>
+                <p className="text-muted-foreground text-sm mt-2">{project.description}</p>
               </CardContent>
             </Card>
           );

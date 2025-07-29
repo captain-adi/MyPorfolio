@@ -26,12 +26,12 @@ const socialMediaData = [
 
 const Contact = () => {
   return (
-    <section className="px-6 md:px-20 py-16 h-[calc(100vh-150px)]">
-      <h2 className="text-5xl font-bold mb-12">Let's Connect!</h2>
+    <section className="py-3 md:py-16   h-full md:h-[calc(100vh-150px)]">
+      <h2 className="text-5xl font-bold mb-20">Let's Connect!</h2>
 
       <div className="flex flex-col md:flex-row gap-10">
         {/* Message Form */}
-        <div className="flex-[2] mt-10">
+        <div className="flex-[2]">
           <h3 className="text-lg font-semibold mb-4">Message Me</h3>
           <form className="space-y-4">
             <div className="flex gap-4">

@@ -1,7 +1,7 @@
 function Connect() {
   return (
-    <div>
-      <h1 className="text-[214px] cursor-pointer font-bold mb-10">
+    <div className="w-full px-4 ">
+      <h1 className="font-bold mb-10 cursor-pointer text-[6vw] xl:text-[10vw] md:text-[7vw] leading-none">
         Let's Connect!
       </h1>
     </div>
@@ -9,3 +9,4 @@ function Connect() {
 }
 
 export default Connect;
+

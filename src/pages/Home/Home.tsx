@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div >
+    <div className="py-16">
       <section className="w-full items-center">
-        <div className="w-full flex flex-col gap-6 px-6 py-12">
+        <div className="w-full flex flex-col gap-6 px-6 ">
           <h1 className="text-5xl font-bold mb-6">
             Hello Everyone! I'm Aditya.
           </h1>
@@ -81,7 +81,7 @@ function Home() {
 
       <div>
         <h2 className="text-2xl font-bold mb-10">Stack</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1  xl:grid-cols-3 gap-4">
           {stack.slice(0,3).map((project, index) => {
             return (
               <div

@@ -4,8 +4,8 @@ import { stack } from "@/data/stack";
 
 function Stacks() {
   return (
-    <div className="container mx-auto mt-15 ">
-      <h1 className="text-6xl py-12">My Tech Tools</h1>
+    <div className="py-16">
+      <h1 className="text-5xl font-bold mb-20">My Tech Tools</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2  gap-4">
         {stack.map((project, index) => {
           return (
