@@ -1,3 +1,4 @@
+import Connect from "@/components/connect/Connect";
 import { Card, CardContent } from "@/components/ui/card";
 import { projectData } from "@/data/projectData";
 
@@ -32,6 +33,7 @@ function Projects() {
         })}
       </div>
       {/* Project list goes here */}
+      <Connect />
     </div>
   );
 }

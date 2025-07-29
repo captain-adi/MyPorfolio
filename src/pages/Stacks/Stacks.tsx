@@ -1,3 +1,4 @@
+import Connect from "@/components/connect/Connect";
 import CountUp from "@/components/countUP/countUp";
 import { Card, CardContent } from "@/components/ui/card";
 import { stack } from "@/data/stack";
@@ -40,6 +41,7 @@ function Stacks() {
           );
         })}
       </div>
+      <Connect/>
     </div>
   );
 }
