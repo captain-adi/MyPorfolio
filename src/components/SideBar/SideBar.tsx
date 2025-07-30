@@ -77,7 +77,7 @@ const socialLinks = [
 export function AppSidebar() {
   return (
     <Sidebar className=" w-72 p-0 border mr-1 " variant="inset">
-      <SidebarContent >
+      <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent className="flex flex-col items-center p-6">
             <img
@@ -86,7 +86,12 @@ export function AppSidebar() {
               className="w-48 rounded-lg object-cover mb-4"
             />
             <div className="bg-green-600 text-sm px-3 py-1 rounded-full mb-6">
-              <span className="text-white">● Available for Work</span>
+              <Link download={"resume.pdf"} to="./resume.pdf" target="_blank" className="cursor-pointer">
+              <span className="text-white flex items-center gap-2">
+                <div className="h-3 w-3 rounded-full bg-white animate-[pulse_1.5s_ease-in-out_infinite]"></div>
+                See My Resume
+              </span>
+              </Link>
             </div>
             <SidebarMenu className=" flex  gap-5">
               {items.map((item) => (
@@ -105,26 +110,25 @@ export function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-            <SidebarFooter className="mt-auto px-4 py-6 border-t">
-              <div className="flex justify-center gap-7 mb-2">
-                {socialLinks.map((link) => {
-                  const Icon = link.icon;
-                  return (
-                    <a
-                      key={link.name}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={link.name}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Icon className="w-5 h-5" />
-                    </a>
-                  );
-                })}
-              </div>
-             
-            </SidebarFooter>
+        <SidebarFooter className="mt-auto px-4 py-6 border-t">
+          <div className="flex justify-center gap-7 mb-2">
+            {socialLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.name}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              );
+            })}
+          </div>
+        </SidebarFooter>
       </SidebarContent>
     </Sidebar>
   );

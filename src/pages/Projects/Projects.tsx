@@ -1,6 +1,7 @@
 import Connect from "@/components/connect/Connect";
 import { Card, CardContent } from "@/components/ui/card";
 import { projectData } from "@/data/projectData";
+import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -9,6 +10,7 @@ function Projects() {
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 ">
         {projectData.map((project, index) => {
           return (
+            <Link to={project.link} target="_blank">    
             <Card key={index}>
               <CardContent>
                 <div
@@ -29,6 +31,7 @@ function Projects() {
                 <p className="text-muted-foreground text-sm mt-2">{project.description}</p>
               </CardContent>
             </Card>
+              </Link>
           );
         })}
       </div>
