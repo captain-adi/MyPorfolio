@@ -52,6 +52,7 @@ function Home() {
                 className=" w-full h-fit cursor-pointer  rounded-lg  flex flex-col gap-3"
               >
                 <img
+                  loading="lazy"
                   src={project.image}
                   className="h-3/4 w-full rounded-2xl"
                   alt={project.title}
