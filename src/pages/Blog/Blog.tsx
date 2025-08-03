@@ -32,7 +32,7 @@ function Blog() {
           <Card key={post.title}>
             <CardContent>
               <article className="">
-                <h2 className="text-2xl font-semibold">
+                <h2 className="text-2xl font-semibold text-green-400">
                   <Link to={post.link}>{post.title}</Link>
                 </h2>
                 <time className="block text-sm text-muted-foreground mb-6">
