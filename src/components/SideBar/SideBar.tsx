@@ -8,6 +8,7 @@ import {
   Linkedin,
   Instagram,
   MessageCircleMore,
+  BookOpenTextIcon,
 } from "lucide-react";
 
 import {
@@ -49,6 +50,11 @@ const items = [
     url: "/contact",
     icon: Contact,
   },
+  {
+    title: "Blogs",
+    url: "/blog",
+    icon: BookOpenTextIcon,
+  }
 ];
 // Array of social links and icons
 const socialLinks = [
