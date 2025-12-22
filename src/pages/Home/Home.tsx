@@ -26,10 +26,7 @@ function Home() {
               <span className="flex-grow border-dotted border-t border-gray-600 mx-4"></span>
             </div>
             <Link to="/about">
-              <Button
-                className="flex items-center gap-2 p-5 hover:text-green-400 cursor-pointer group transition-all"
-                variant={"outline"}
-              >
+              <Button className="btn-stack  group" variant={"outline"}>
                 More about Me{" "}
                 <ArrowRight
                   size={16}
@@ -67,10 +64,7 @@ function Home() {
 
       <div className="flex justify-end my-10">
         <Link to="/projects">
-          <Button
-            className="flex items-center gap-2 p-5 hover:text-green-400 cursor-pointer group transition-all"
-            variant={"outline"}
-          >
+          <Button className="btn-stack  group" variant={"outline"}>
             See More Projects{" "}
             <ArrowRight
               size={16}
@@ -83,7 +77,7 @@ function Home() {
       <div>
         <h2 className="text-2xl font-bold mb-10">Stack</h2>
         <div className="grid grid-cols-1  xl:grid-cols-3 gap-4">
-          {stack.slice(0,3).map((project, index) => {
+          {stack.slice(0, 3).map((project, index) => {
             return (
               <div
                 key={index}
@@ -105,10 +99,7 @@ function Home() {
       </div>
       <div className="flex justify-end my-10">
         <Link to="/stack">
-          <Button
-            className="flex items-center gap-2 p-5 hover:text-green-400 cursor-pointer group transition-all"
-            variant="outline"
-          >
+          <Button className="btn-stack  group" variant="outline">
             View All Stacks
             <ArrowRight
               size={16}

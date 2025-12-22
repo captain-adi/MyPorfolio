@@ -118,3 +118,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .btn-stack {
+    @apply flex items-center gap-2 p-5 cursor-pointer transition-all hover:!text-green-400;
+  }
+}

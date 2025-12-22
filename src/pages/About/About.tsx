@@ -11,7 +11,15 @@ function About() {
       <section className="flex flex-col gap-12">
         <h1 className="text-5xl font-bold mb-6">Get to Know Me</h1>
         <p className="text-muted-foreground  leading-relaxed max-w-5xl">
-          I’m Aditya, a dedicated front-end developer with a strong focus on building responsive and user-friendly web interfaces using React.js. I enjoy crafting clean, efficient code and continuously improving my skills to stay aligned with modern web development practices. I'm also exploring backend technologies to expand my full-stack capabilities and actively learning data structures and algorithms to strengthen my problem-solving abilities. With a strong passion for technology and continuous learning, I’m committed to creating impactful digital experiences.
+          I’m Aditya, a dedicated front-end developer with a strong focus on
+          building responsive and user-friendly web interfaces using React.js. I
+          enjoy crafting clean, efficient code and continuously improving my
+          skills to stay aligned with modern web development practices. I'm also
+          exploring backend technologies to expand my full-stack capabilities
+          and actively learning data structures and algorithms to strengthen my
+          problem-solving abilities. With a strong passion for technology and
+          continuous learning, I’m committed to creating impactful digital
+          experiences.
         </p>
         <div className="flex items-center mt-6">
           <img src="./location3.gif" className="h-6 w-6" alt="location" />
@@ -26,7 +34,9 @@ function About() {
         <div className="flex items-start gap-4">
           <GraduationCap className="mt-1 text-green-400" />
           <div>
-            <h3 className="font-bold">Bachelor's Degree In Computer Application</h3>
+            <h3 className="font-bold">
+              Bachelor's Degree In Computer Application
+            </h3>
             <p className="text-muted-foreground text-sm">
               Govt E Raghavendra Rao Science College, Bilaspur
             </p>
@@ -62,10 +72,7 @@ function About() {
       {/* Button Section */}
       <div className="flex justify-end my-16">
         <Link to="/projects">
-          <Button
-            className="flex items-center gap-2 px-6 py-4 hover:text-green-400 cursor-pointer group border border-gray-600"
-            variant="outline"
-          >
+          <Button className="btn-stack  group" variant="outline">
             See More Projects
             <ArrowRight
               size={16}
