@@ -123,4 +123,7 @@
   .btn-stack {
     @apply flex items-center gap-2 p-5 cursor-pointer transition-all hover:!text-green-400;
   }
+  .title-font {
+    @apply text-5xl font-bold mb-20;
+  }
 }

@@ -9,7 +9,7 @@ function About() {
     <div className=" py-16 ">
       {/* Top Section */}
       <section className="flex flex-col gap-12">
-        <h1 className="text-5xl font-bold mb-6">Get to Know Me</h1>
+        <h1 className="title-font">Get to Know Me</h1>
         <p className="text-muted-foreground  leading-relaxed max-w-5xl">
           I’m Aditya, a dedicated front-end developer with a strong focus on
           building responsive and user-friendly web interfaces using React.js. I

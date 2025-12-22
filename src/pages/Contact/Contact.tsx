@@ -1,33 +1,40 @@
-import { Mail, Phone, Twitter, Linkedin, Instagram, MessageCircle } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  Twitter,
+  Linkedin,
+  Instagram,
+  MessageCircle,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const socialMediaData = [
   {
     name: "Twitter",
     icon: Twitter,
-    link: "https://twitter.com/yourusername"
+    link: "https://twitter.com/yourusername",
   },
   {
-    name: "LinkedIn", 
+    name: "LinkedIn",
     icon: Linkedin,
-    link: "https://linkedin.com/in/yourusername"
+    link: "https://linkedin.com/in/yourusername",
   },
   {
     name: "Instagram",
     icon: Instagram,
-    link: "https://instagram.com/yourusername"
+    link: "https://instagram.com/yourusername",
   },
   {
     name: "WhatsApp",
     icon: MessageCircle,
-    link: "https://wa.me/919171977959"
-  }
+    link: "https://wa.me/919171977959",
+  },
 ];
 
 const Contact = () => {
   return (
     <section className="py-3 md:py-16   h-full md:h-[calc(100vh-150px)]">
-      <h2 className="text-5xl font-bold mb-20">Let's Connect!</h2>
+      <h2 className="title-font">Let's Connect!</h2>
 
       <div className="flex flex-col md:flex-row gap-10">
         {/* Message Form */}
@@ -78,9 +85,9 @@ const Contact = () => {
           <ul className="space-y-4 text-sm">
             {socialMediaData.map((platform) => (
               <li key={platform.name} className="flex items-center gap-2">
-                <Link 
-                  to={platform.link} 
-                  target="_blank" 
+                <Link
+                  to={platform.link}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex font-light text-muted-foreground items-center gap-2 hover:text-green-400 transition-colors"
                 >
@@ -92,8 +99,6 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-
-   
     </section>
   );
 };
