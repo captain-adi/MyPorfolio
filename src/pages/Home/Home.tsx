@@ -46,7 +46,7 @@ function Home() {
             return (
               <div
                 key={index}
-                className=" w-full h-fit cursor-pointer  rounded-lg  flex flex-col gap-3"
+                className=" cursor-pointer  rounded-lg  flex flex-col gap-3"
               >
                 <img
                   loading="lazy"
@@ -62,7 +62,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex justify-end my-10">
+      <div className="flex justify-end mb-10">
         <Link to="/projects">
           <Button className="btn-stack  group" variant={"outline"}>
             See More Projects{" "}
