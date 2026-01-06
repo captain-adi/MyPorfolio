@@ -8,11 +8,14 @@ function App() {
   return (
     <>
       <SidebarProvider>
-        <AppSidebar />
-        <main className="flex-1 px-15 xl:ml-18 py-15"> 
-          <SidebarTrigger  className="absolute top-4 right-4 md:hidden " />
+        <div className="md:hidden block">
+          <AppSidebar />
+        </div>
+
+        <main className="flex-1   px-6 container mx-auto">
+          <SidebarTrigger className="absolute top-4 right-4 md:hidden " />
           <Outlet />
-        <Footer/>
+          <Footer />
         </main>
       </SidebarProvider>
     </>

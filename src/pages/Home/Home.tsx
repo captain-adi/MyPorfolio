@@ -1,4 +1,5 @@
 import Connect from "@/components/connect/Connect";
+import LogoLoop from "@/components/logoLoop/LogoLoop";
 import { Button } from "@/components/ui/button";
 import { projectData } from "@/data/projectData";
 import { stack } from "@/data/stack";
@@ -74,6 +75,7 @@ function Home() {
         </Link>
       </div>
 
+      <LogoLoop />
       <div>
         <h2 className="text-2xl font-bold mb-10">Stack</h2>
         <div className="grid grid-cols-1  xl:grid-cols-3 gap-4">
