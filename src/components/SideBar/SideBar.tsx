@@ -9,6 +9,8 @@ import {
   Instagram,
   MessageCircleMore,
   BookOpenTextIcon,
+  Download,
+  Sun,
 } from "lucide-react";
 
 import {
@@ -54,7 +56,7 @@ const items = [
     title: "Blogs",
     url: "/blog",
     icon: BookOpenTextIcon,
-  }
+  },
 ];
 // Array of social links and icons
 const socialLinks = [
@@ -92,12 +94,20 @@ export function AppSidebar() {
               className="w-48 rounded-lg object-cover mb-4"
             />
             <div className="bg-green-600 text-sm px-3 py-1 rounded-full mb-6">
-              <Link download={"resume.pdf"} to="./resume.pdf" target="_blank" className="cursor-pointer">
-              <span className="text-white flex items-center gap-2">
-                <div className="h-3 w-3 rounded-full bg-white animate-[pulse_1.5s_ease-in-out_infinite]"></div>
-                See My Resume
-              </span>
+              <Link
+                download={"resume.pdf"}
+                to="./resume.pdf"
+                target="_blank"
+                className="cursor-pointer"
+              >
+                <span className="text-white flex items-center gap-1">
+                  <Download size={14} className="animate-bounce" />
+                  See My Resume
+                </span>
               </Link>
+            </div>
+            <div>
+              <Sun className="animate-spin text-yellow-400" />
             </div>
             <SidebarMenu className=" flex  gap-5">
               {items.map((item) => (
