@@ -12,8 +12,16 @@ function App() {
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company" },
-        { label: "Careers", ariaLabel: "About Careers" },
+        {
+          label: "Company",
+          href: "#about/company",
+          ariaLabel: "About Company",
+        },
+        {
+          label: "Careers",
+          href: "#about/careers",
+          ariaLabel: "About Careers",
+        },
       ],
     },
     {
@@ -21,8 +29,16 @@ function App() {
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" },
-        { label: "Case Studies", ariaLabel: "Project Case Studies" },
+        {
+          label: "Featured",
+          href: "#projects/featured",
+          ariaLabel: "Featured Projects",
+        },
+        {
+          label: "Case Studies",
+          href: "#projects/case-studies",
+          ariaLabel: "Project Case Studies",
+        },
       ],
     },
     {
@@ -30,8 +46,16 @@ function App() {
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" },
-        { label: "Case Studies", ariaLabel: "Project Case Studies" },
+        {
+          label: "Featured",
+          href: "#projects/featured",
+          ariaLabel: "Featured Projects",
+        },
+        {
+          label: "Case Studies",
+          href: "#projects/case-studies",
+          ariaLabel: "Project Case Studies",
+        },
       ],
     },
     {
@@ -39,9 +63,9 @@ function App() {
       bgColor: "#271E37",
       textColor: "#fff",
       links: [
-        { label: "Email", ariaLabel: "Email us" },
-        { label: "Twitter", ariaLabel: "Twitter" },
-        { label: "LinkedIn", ariaLabel: "LinkedIn" },
+        { label: "Email", href: "#contact/email", ariaLabel: "Email us" },
+        { label: "Twitter", href: "#contact/twitter", ariaLabel: "Twitter" },
+        { label: "LinkedIn", href: "#contact/linkedin", ariaLabel: "LinkedIn" },
       ],
     },
   ];
@@ -55,6 +79,7 @@ function App() {
         <main className="flex-1 flex flex-col">
           <div className="md:block hidden">
             <CardNav
+              logo="/logo.png"
               logoAlt="Company Logo"
               items={items}
               baseColor="#fff"
