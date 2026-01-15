@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className=" py-16 ">
+    <div className=" py-16 md:mt-16">
       {/* Top Section */}
       <section className="flex flex-col gap-12">
         <h1 className="title-font">Get to Know Me</h1>

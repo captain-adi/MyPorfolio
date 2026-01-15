@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Projects() {
   return (
-    <div className="py-16">
+    <div className="py-16 md:mt-16">
       <h1 className="title-font">My Remarkable Projects</h1>
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 ">
         {projectData.map((project, index) => {

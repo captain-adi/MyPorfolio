@@ -52,9 +52,8 @@ function App() {
           <AppSidebar />
         </div>
 
-        <main className="flex-1   px-6 container mx-auto">
-          <SidebarTrigger className="absolute top-4 right-4 md:hidden " />
-          <div className="md:block hidden ">
+        <main className="flex-1 flex flex-col">
+          <div className="md:block hidden">
             <CardNav
               logoAlt="Company Logo"
               items={items}
@@ -65,7 +64,10 @@ function App() {
               ease="power3.out"
             />
           </div>
-          <Outlet />
+          <div className="px-6 container mx-auto flex-1">
+            <SidebarTrigger className="absolute top-4 right-4 md:hidden " />
+            <Outlet />
+          </div>
           <Footer />
         </main>
       </SidebarProvider>

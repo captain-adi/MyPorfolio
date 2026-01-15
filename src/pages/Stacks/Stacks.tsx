@@ -5,7 +5,7 @@ import { stack } from "@/data/stack";
 
 function Stacks() {
   return (
-    <div className="py-16">
+    <div className="py-16  md:mt-16">
       <h1 className="text-5xl font-bold mb-20">My Tech Tools</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2  gap-4">
         {stack.map((project, index) => {
@@ -41,7 +41,7 @@ function Stacks() {
           );
         })}
       </div>
-      <Connect/>
+      <Connect />
     </div>
   );
 }

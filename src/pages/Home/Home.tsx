@@ -8,12 +8,10 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="py-16">
+    <div className="py-16 md:mt-16">
       <section className="w-full items-center">
         <div className="w-full flex flex-col gap-6 px-6 ">
-          <h1 className="text-5xl font-bold mb-6">
-            Hello Everyone! I'm Aditya.
-          </h1>
+          <h1 className="title-font">Hello Everyone! I'm Aditya.</h1>
 
           <p className="text-muted-foreground text-lg my-8 max-w-2xl">
             A passionate Frontend developer with a knack for turning ideas into
