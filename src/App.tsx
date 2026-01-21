@@ -13,31 +13,14 @@ function App() {
       textColor: "#fff",
       links: [
         {
-          label: "Company",
-          href: "#about/company",
-          ariaLabel: "About Company",
+          label: "Me",
+          href: "/about",
+          ariaLabel: "About Me Page",
         },
         {
-          label: "Careers",
-          href: "#about/careers",
-          ariaLabel: "About Careers",
-        },
-      ],
-    },
-    {
-      label: "Projects",
-      bgColor: "#170D27",
-      textColor: "#fff",
-      links: [
-        {
-          label: "Featured",
-          href: "#projects/featured",
-          ariaLabel: "Featured Projects",
-        },
-        {
-          label: "Case Studies",
-          href: "#projects/case-studies",
-          ariaLabel: "Project Case Studies",
+          label: "My Skills",
+          href: "/stack",
+          ariaLabel: "About My Skills Page",
         },
       ],
     },
@@ -48,13 +31,25 @@ function App() {
       links: [
         {
           label: "Featured",
-          href: "#projects/featured",
+          href: "/projects",
           ariaLabel: "Featured Projects",
         },
         {
           label: "Case Studies",
           href: "#projects/case-studies",
           ariaLabel: "Project Case Studies",
+        },
+      ],
+    },
+    {
+      label: "Blog",
+      bgColor: "#170D27",
+      textColor: "#fff",
+      links: [
+        {
+          label: "My Blogs",
+          href: "/blog",
+          ariaLabel: "Featured Blogs",
         },
       ],
     },
@@ -63,9 +58,26 @@ function App() {
       bgColor: "#271E37",
       textColor: "#fff",
       links: [
-        { label: "Email", href: "#contact/email", ariaLabel: "Email us" },
-        { label: "Twitter", href: "#contact/twitter", ariaLabel: "Twitter" },
-        { label: "LinkedIn", href: "#contact/linkedin", ariaLabel: "LinkedIn" },
+        {
+          label: "Email",
+          href: "mailto:adipandey830@gmail.com",
+          ariaLabel: "Email us",
+        },
+        {
+          label: "Twitter",
+          href: "https://x.com/adi_iox",
+          ariaLabel: "Twitter",
+        },
+        {
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/in/aditya-pandey-070447233",
+          ariaLabel: "LinkedIn",
+        },
+        {
+          label: "GitHub",
+          href: "https://github.com/captain-adi",
+          ariaLabel: "GitHub",
+        },
       ],
     },
   ];

@@ -1,5 +1,5 @@
 import Connect from "@/components/connect/Connect";
-import LogoLoop from "@/components/logoLoop/LogoLoop";
+// import LogoLoop from "@/components/logoLoop/LogoLoop";
 import { Button } from "@/components/ui/button";
 import { projectData } from "@/data/projectData";
 import { stack } from "@/data/stack";
@@ -50,8 +50,8 @@ function Home() {
                 <img
                   loading="lazy"
                   src={project.image}
-                  className="h-3/4 w-full rounded-2xl"
                   alt={project.title}
+                  className="w-full aspect-[16/9] object-cover rounded-lg"
                 />
                 <p className="text-green-400 uppercase ">Web Design</p>
                 <h3>{project.title}</h3>
@@ -73,7 +73,7 @@ function Home() {
         </Link>
       </div>
 
-      <LogoLoop />
+      {/* <LogoLoop /> */}
       <div>
         <h2 className="text-2xl font-bold mb-10">Stack</h2>
         <div className="grid grid-cols-1  xl:grid-cols-3 gap-4">
