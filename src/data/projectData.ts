@@ -11,7 +11,7 @@ export const projectData = [
     description:
       "This is a brief description of Project Two. It showcases the main features and technologies used.",
     image: "./ecom.avif",
-    link: "https://mintra-clone-mu.vercel.app/",
+    link: "https://myntra-jade.vercel.app/",
   },
   {
     title: "Klimate",
