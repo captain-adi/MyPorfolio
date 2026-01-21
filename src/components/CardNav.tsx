@@ -97,7 +97,7 @@ const CardNav: React.FC<CardNavProps> = ({
     tl.to(
       cardsRef.current,
       { y: 0, opacity: 1, duration: 0.4, ease, stagger: 0.08 },
-      "-=0.1"
+      "-=0.1",
     );
 
     return tl;
@@ -194,7 +194,7 @@ const CardNav: React.FC<CardNavProps> = ({
 
           <div>
             <Sun
-              className="animate-pulse text-yellow-400 mr-4"
+              className="animate-pulse text-black mr-4 cursor-pointer"
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             />
           </div>
