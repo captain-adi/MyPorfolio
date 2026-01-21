@@ -24,6 +24,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { Link } from "react-router-dom";
+import { useTheme } from "@/context/ThemeProvider";
 
 // Menu items.
 const items = [
@@ -83,6 +84,7 @@ const socialLinks = [
 ];
 
 export function AppSidebar() {
+  const { setTheme, theme } = useTheme();
   return (
     <Sidebar className=" w-72 p-0 border mr-1 " variant="inset">
       <SidebarContent>
@@ -93,22 +95,31 @@ export function AppSidebar() {
               alt="profile"
               className="w-48 rounded-lg object-cover mb-4"
             />
-            <div className="bg-green-600 text-sm px-3 py-1 rounded-full mb-6">
-              <Link
-                download={"resume.pdf"}
-                to="./resume.pdf"
-                target="_blank"
-                className="cursor-pointer"
-              >
-                <span className="text-white flex items-center gap-1">
-                  <Download size={14} className="animate-bounce" />
-                  See My Resume
-                </span>
-              </Link>
+            <div className="flex gap-4">
+              <div className="bg-green-600 text-sm px-3 py-1 rounded-full mb-6">
+                <Link
+                  download={"resume.pdf"}
+                  to="./resume.pdf"
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <span className="text-white flex items-center gap-1">
+                    <Download size={14} className="animate-bounce" />
+                    See My Resume
+                  </span>
+                </Link>
+              </div>
+              <div>
+                <Sun
+                  className={
+                    "cursor-pointer " +
+                    (theme === "dark" ? "text-yellow-400" : "text-gray-600")
+                  }
+                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                />
+              </div>
             </div>
-            <div>
-              <Sun className="animate-spin text-yellow-400" />
-            </div>
+
             <SidebarMenu className=" flex  gap-5">
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
