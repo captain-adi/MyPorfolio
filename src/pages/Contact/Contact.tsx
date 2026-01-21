@@ -33,7 +33,7 @@ const socialMediaData = [
 
 const Contact = () => {
   return (
-    <section className="py-3 md:py-16   h-full md:h-[calc(100vh-150px)]">
+    <section className="py-16 md:mt-16">
       <h2 className="title-font">Let's Connect!</h2>
 
       <div className="flex flex-col md:flex-row gap-10">

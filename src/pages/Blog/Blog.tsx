@@ -26,7 +26,7 @@ function Blog() {
     },
   ];
   return (
-    <div className="py-3 md:h-[80vh]">
+    <div className="py-16 md:mt-16">
       <h1 className="title-font">My Blogs</h1>
       <section className="flex flex-col gap-6 ">
         {blogPosts.map((post) => (
